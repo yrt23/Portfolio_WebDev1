@@ -1,0 +1,217 @@
+main {
+    display: grid;
+    /* justify-items: center; */
+    /* ----------- */
+    margin: 10px 20px 10px 20px;
+    font-family: sans-serif, serif, "Times New Roman";
+    background-color:  #FFD580;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 38px;
+    opacity: 0.7;
+    font-family: sans-serif, serif, "Times New Roman";
+}
+
+
+.main_subtitle {
+    text-align: center;
+}
+
+
+ul {
+  list-style-type: square;
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 20px;
+}
+
+.brief-history {
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 20px;
+}
+
+.citation{
+  margin-left: 10px;
+}
+
+/* This is the 'simple lorem ipsum generator' */
+/* 
+   letter-spacing: 0.25rem; 
+   line-height: 1.25;
+   text-transform: uppercase;
+*/
+
+h2 {
+  font-size: 25px;
+  color: #000000;
+  margin: 10px;
+  text-align: left;
+}
+
+/* 
+   Formatting the 'button' form 
+   margin-top: 2rem;
+   letter-spacing: 0.25rem;
+   text-transform: capitalize;
+*/
+.lorem-form {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+   This is the number box in the form
+*/
+.paraAmountNum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+    This is to customise the 'paragraphs' label
+*/
+label {
+  font-size: 20px;
+  color: #000000;
+}
+
+/*
+    This is to customise the 'paragraphs' label
+*/
+input {
+  padding: 0.25rem 0.5rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: #222;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  border: 2px solid #222;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+}
+
+/*
+Use the :hover selector to change the style of a button when you move the mouse over it.
+*/
+.btn:hover {
+  color: #00000;
+  background: #ff8c00;
+}
+
+/*
+
+*/
+.result {
+  width:80vw;
+  margin: 1rem auto;
+}
+
+
+/* 
+   ====================================
+   This section is for the copy button 
+   =====================================
+*/
+
+/*
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  color: #00000;
+  background: #ff8c00;
+  opacity: 1;
+}
+
+*/
+
+.copy_btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: #222;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  border: 2px solid #222;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.copy_btn:hover {
+  color: #00000;
+  background: #ff8c00;
+}
+
+
+/*      */
+.adjustable_text{
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+}
+
+.input-wrap {
+  position: relative;
+}
+.input-wrap .adjustable_text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
