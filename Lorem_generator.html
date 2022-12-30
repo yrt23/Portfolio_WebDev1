@@ -1,0 +1,98 @@
+<!--Declare to the browser about what document type to expect
+
+This is based on https://codepen.io/r_e_d_ant/pen/YzpwwdZ
+--> 
+<!DOCTYPE html>
+
+<!--Root of HTML document, lang="en" is to declare the language of the Web page. This is meant to assist search engines and browsers--> 
+<html lang="en">
+  
+ <!--The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. HTML metadata is data about the HTML document. Metadata is not displayed.--> 
+  <head> 
+ <!-- The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. -->
+    <title> ABC </title>
+ <!-- The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings. The charset attribute specifies the character encoding for the HTML document. The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world!-->
+    <meta charset="UTF-8">
+ <!--HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag. You should include the following <meta> viewport element in all your web pages: This gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The <link> element defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets:-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body id="main">
+    <main id="main"> 
+      <!-- This is the first division -->
+      <div> 
+      
+        <h1 id="main_title"> Lorem Ipsum </h1>
+      
+        <p class="main_subtitle"> The most common placeholder text in the world</p> 
+      </div>
+    
+<!--     -->    
+      <div id="img-div">
+           
+        <figure> <img id="image" src="https://graphicdesigno.com/wp-content/uploads/2016/07/What-is-Lorem-ipsum.jpg" alt="Loren ipsum graphic" style="width:100%","height:auto"> <figcaption>(Source: <a href="https://graphicdesigno.com">graphicdesigno.com</a>)</figcaption></figure>
+        
+      </div>
+<!--     -->    
+       <div id="brief-history"> 
+          <ul>
+            <li>Lorem ipsum is typically a corrupted version of Cicero's De finibus bonorum et malorum, a 1st-century BC text with words changed, added, and removed to make it nonsensical and improper Latin.</li>
+            <li>Versions of the Lorem ipsum text have been used in typesetting since at least the 1960s, when advertisements for Letraset transfer sheets popularised it.</li>
+            <li>Lorem ipsum made its digital debut in the mid-1980s, when Aldus used it in graphic and word-processing templates for its desktop publishing programme PageMaker.</li>
+          </ul>
+       </div>
+ 
+            
+      <p class="citation"> (Source: <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">wikipedia.org</a>) 
+      </p>
+ 
+      
+<!--  
+      Based on  https://www.youtube.com/watch?v=FxGoTtoFvfs
+      https://github.com/nabendu82/JS-Projects/tree/master/LoremIpsum
+-->      
+      
+      <section class="section-center">
+        <h2> Simple Lorem Ipsum Generator</h2>
+ 
+        <!--  Start of the 'button' form   -->   
+        <form class="lorem-form">
+          <label form="numofpara"> Paragraphs:</label>
+          <div class="paraAmountNum">
+               <input type="range" min="1" max="10" 
+                      value="5" id="numofparaRange">
+               <input type="number" min="1" max="10" 
+                      value="5" id="numofpara" class="numberInput">
+          </div>
+          <button type="submit" class="btn"> Generate! </button>
+        </form>
+        <!--  End of the 'button' form   -->   
+        
+           <article class="lorem-text"> </article>
+      </section>
+      <script src="main.js"> </script>
+
+<!-- The text field 
+tempText
+<input type="text" value="Hello World" id="myInput">
+
+<input type="text" value="" id="myInput">
+
+<!-- The button used to copy the text 
+<button onclick="myFunction()" class="copy_btn">Copy text</button>
+-->
+      
+
+      
+<!--  https://css-tricks.com/auto-growing-inputs-textareas/   
+       <p>
+           <span class="input" role="textbox" id="adjustable_text" contenteditable> input something </span> 
+      </p>
+ -->  
+      
+    </main>
+  </body>
+</html>
+
